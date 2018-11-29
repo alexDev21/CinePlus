@@ -1,0 +1,187 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="SisCine.Principal" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <%--<link href="App_Themes/Tema1/estilo1.css" rel="stylesheet" />--%>
+    <title>CinePlus</title>
+    <meta name="description" content="Your description" />
+    <meta name="keywords" content="Your keywords" />
+    <meta name="author" content="Your name" />
+    <link rel="stylesheet" href="css/style.css" />
+    <%--<script src="js/jquery-1.7.1.min.js"></script>--%>
+    <script src="js/superfish.js"></script>
+    <%--<script src="js/jquery.easing.1.3.js"></script>--%>
+    <%--<script src="js/slider.js"></script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <%--placeholder de HEAD--%>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div class="main-bg">
+        <center><asp:ContentPlaceHolder ID="bienvenido" runat="server">
+    <%--<form runat="server">--%>
+            <%--</form>--%>
+                 </asp:ContentPlaceHolder></center>
+        <!-- Header -->
+        <header>
+            <center><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></center>
+            <div class="inner">
+                <h1 class="logo"><a href="Default.aspx"></a></h1>
+
+                <nav>
+                    <ul class="sf-menu">
+                        <li class="current"><a href="/Login.aspx">INICIO DE SESION</a></li>
+                        <li><a href="Cartelera.aspx">cartelera</a></li>
+                        <li>
+                            <a href="LocalesCineplus.aspx">nuestros cines</a>
+                            <ul>
+                                <li><a href="#">Lima cercado</a></li>
+                                <li><a href="#">La molina</a></li>
+                                <%--  <li>
+                                        <a href="#">tempor eros</a>
+                                        <ul>
+                                            <li><a href="#">ut viverra</a></li>
+                                            <li><a href="#">hendrerit mauris</a></li>
+                                        </ul>
+                                    </li>--%>
+                            </ul>
+                        </li>
+                        <li><a href="VentaEntradas.aspx">compra tu entrada </a></li>
+                        <li><a href="Promos.aspx">promociones</a></li>
+                    </ul>
+                </nav>
+
+                <%--      <div id="wrapper1as">
+                    <div id="menuGnrl">
+                        <select name="cines" required size="1">
+                            <option value="" disabled selected>Seleccione un cine</option>
+                            <option value="link pagina 2">opcion1</option>
+                            <option value="link pagina 3">opcion2</option>
+                        </select>
+
+                        <select name="ciudad" required size="1">
+                            <option value="" disabled selected>Seleccione su ciudad</option>
+                            <option value="link pagina 2">opcion1</option>
+                            <option value="link pagina 3">opcion2</option>
+                        </select>
+
+                        <button>VER CARTELERA</button>
+                    </div>
+                </div>--%>
+                <!-- Fin del Header -->
+
+                <div class="clear"></div>
+            </div>
+
+
+
+
+
+            <%-- <!--Slider -->
+             
+
+         <!--Fin Slider -->--%>
+            <asp:ContentPlaceHolder ID="Slider" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </header>
+
+
+
+
+
+
+        <div id="contenido">
+            <asp:ContentPlaceHolder ID="ContenidoCentral" runat="server"></asp:ContentPlaceHolder>
+            <%--contenido central--%>
+        </div>
+
+
+
+
+        <footer>
+
+
+            <div class="container_24">
+                <div class="wrapper">
+                    <div class="grid_24 footer-bg">
+                        <div class="hr-border-2"></div>
+                        <div class="wrapper">
+                            <div class="grid_7 suffix_1 prefix_1 alpha">
+                                <div class="copyright">
+                                    &copy; 2017 <strong class="footer-logo">CinePlus</strong>
+                                    <%--<div>Busque m&aacute;s plantillas web gratis <a href="http://www.mejoresplantillasgratis.es" target="_blank">en MPG.es</a>.</div>--%>
+                                    <%--<div><a rel="nofollow" href="http://www.templatemonster.com">Website Template</a> by TemplateMonster.com</div>--%>
+                                </div>
+                            </div>
+                            <div class="grid_4">
+                                <h5 class="heading-1">Archivos:</h5>
+                                <ul class="footer-list">
+                                    <li><a href="#">Octubre 2017</a></li>
+                                    <li><a href="#">Septiembre 2017</a></li>
+                                    <li><a href="#">Agosto 2017</a></li>
+                                    <li><a href="#">Julio 2017</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid_4">
+                                <h5 class="heading-1">Links:</h5>
+                                <ul class="footer-list">
+                                    <li><a href="#">Documentacion</a></li>
+                                    <li><a href="#">Plugins</a></li>
+                                    <li><a href="#">Ideas</a></li>
+                                    <li><a href="#">Foros</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid_4">
+                                <h5 class="heading-1">Soporte:</h5>
+                                <ul class="footer-list">
+                                    <li><a href="#">Prppositos especiales</a></li>
+                                    <li><a href="#">Telefonos</a></li>
+                                    <li><a href="#">Soluciones</a></li>
+                                </ul>
+                            </div>
+                            <div class="grid_2 suffix_1 omega">
+                                <ul class="social-list">
+                                    <li><a href="#">
+                                        <img src="images/social-icon-1.png" alt=""></a></li>
+                                    <li><a href="#">
+                                        <img src="images/social-icon-2.png" alt=""></a></li>
+                                    <li><a href="#">
+                                        <img src="images/social-icon-3.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
+            <center>
+            <div  style="font-size: 13px;">Iconos diseñados por <a href="http://www.freepik.com" title="Freepik">Freepik</a> desde <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> con licencia <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+            <span id="izq">Contenido del sitio 2017 CinePlus  ||  </span> <span style="text-align:right;"id="der">Desarrollado en AVANSYS</span>
+            </center>
+
+
+        </footer>
+
+    </div>
+    <script>
+        $(document).ready(
+function () {
+    $(".vidbox").jqvideobox();
+}
+);</script>
+
+
+    ﻿    
+</body>
+</html>

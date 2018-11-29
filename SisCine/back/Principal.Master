@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="SisCine.Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <link href="App_Themes/Tema1/estilo1.css" rel="stylesheet" />
+    <title>CinePlus</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"><%--placeholder de HEAD--%>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="cabecera">
+            <div id="logo"></div>
+            <div id="wrapper1">
+                <div id="menuGnrl">
+                    <asp:ContentPlaceHolder ID="menuGeneral" runat="server"></asp:ContentPlaceHolder><%--placeholder de cine y ciudad--%>
+                    <select name="cines" required size="1">
+                        <option value="" disabled selected>Seleccione un cine</option>
+                        <option value="link pagina 2">opcion1</option>
+                        <option value="link pagina 3">opcion2</option>
+                    </select>
+
+                    <select name="ciudad" required size="1">
+                        <option value="" disabled selected>Seleccione su ciudad</option>
+                        <option value="link pagina 2">opcion1</option>
+                        <option value="link pagina 3">opcion2</option>
+                    </select>
+
+                    <button>VER CARTELERA</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="barraHorizontal">
+
+            <asp:ContentPlaceHolder ID="barraGorizontal" runat="server"></asp:ContentPlaceHolder><%--placeholdermenu--%>
+            <ul>
+                <li>Próximos Estrenos</li>
+                <li>Preventas</li>
+                <li>Promociones</li>
+                <li>Cartelera</li>
+            </ul>
+
+            <a href="Login.aspx">
+                <img src="/img/login_icon.png"></a>
+    
+
+        </div>
+
+        <div id="contenido">
+            <asp:ContentPlaceHolder ID="ContenidoCentral" runat="server"></asp:ContentPlaceHolder> <%--contenido central--%>
+        </div>
+
+        <footer>
+            <span id="izq">Contenido del sitio 2017 CinePlus</span> <span id="der">Desarrollado en AVANSYS</span>
+        </footer>
+
+    </form>
+</body>
+</html>

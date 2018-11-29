@@ -1,0 +1,173 @@
+﻿body {
+    font-family: 'Baloo', cursive;
+}
+
+#cabecera {
+    height: 90px;
+    width: 100%;
+    background-color: #19437a;
+}
+
+#logo {
+    height: 70px;
+    width: 15%;
+    background-color: black;
+    margin-left: 38px;
+    margin-top: 10px;
+    border-radius: 9px;
+    display: inline-block;
+    float: left;
+}
+
+
+#wrapper1 {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    margin: 25px auto;
+}
+
+#menuGnrl {
+    margin: auto auto;
+    padding: 0;
+}
+
+
+#cabecera img {
+    width: 140px;
+    height: 140px;
+    float: right;
+    /*margin-left: 550px;*/
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+#barraHorizontal {
+    background-color: #426aa5;
+    position: relative;
+    height: 85px;
+}
+
+
+
+    #barraHorizontal a img {
+        width: 80px;
+        right: 15px;
+        position: absolute;
+    }
+
+    #barraHorizontal ul {
+        list-style: none;
+        top: 0px;
+        left: 25%;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+    }
+
+    #barraHorizontal li {
+        display: inline-block;
+        font-family: 'Baloo', cursive;
+        padding: 10px;
+        background-color: #d4d8dd;
+        cursor: pointer;
+        border-radius: 8px;
+        margin: 10px;
+        width: 120.450px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+
+footer {
+    background-color: #404142;
+    height: 80px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: white;
+    font-family: 'Baloo', cursive;
+}
+
+    footer p {
+    }
+
+#izq {
+    text-align: left;
+    color: burlywood;
+}
+
+#der {
+    text-align: right;
+    color: dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+select:required:invalid {
+    color: #999;
+    font-family: 'Baloo', cursive;
+}
+
+option[value=””][disabled] {
+    display: none;
+    font-family: 'Baloo', cursive;
+}
+
+option {
+    color: #000;
+    font-family: 'Baloo', cursive;
+}
+
+select {
+    font-size: 12pt;
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+
+button {
+    font-family: 'Baloo', cursive;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: #11a01b;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+
+#banner {
+    background-color: #262728;
+}
+
+    #banner #slider img {
+        width: 50%;
+        height: 25%;
+        margin: 0px 340px;
+        padding: 0px;
+        border: 0px;
+    }
+
+
+#loginbox {
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0;
+}

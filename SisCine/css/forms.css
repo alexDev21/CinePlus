@@ -1,0 +1,67 @@
+
+/* Contact form */
+/*cambiamos contact-form por contactf por problemas de compilacion del id */
+#contactf {
+	display:block; 
+	position:relative;
+	margin:7px 0 0 0;
+    height:147px;
+}
+#contactf label {
+	display:block; 
+	min-height:34px;
+	position:relative;
+	overflow:hidden;
+}
+/*cambios aca para ancho del label*/
+#contactf span {
+	float:left;
+	text-align:right;
+	margin:4px 8px 0 0;
+    width:84.05px;
+    color:white;
+}
+/*cambios aca para ancho del input*/
+#contactf input {
+	width:419px;
+	font-size:12px;
+	padding:5px 5px 6px 5px !important;
+	background:#2f2f2f;
+	outline:none;
+	font-family: Arial, Helvetica, sans-serif;
+	/*display:block;*/
+	color:white;
+	margin:0;
+	box-shadow:3px 3px 3px rgba(0,0,0,.1) inset;
+	border:1px solid #464646;
+	/*float:left;*/
+	height:15px;
+}
+/*#contactf textarea {
+	width:499px;
+	font-size:12px;
+	padding:5px 5px 6px 5px !important;
+	background:#2f2f2f;
+	outline:none;
+	font-family: Arial, Helvetica, sans-serif;
+	display:block;
+	color:#717171;
+	margin:0;
+	box-shadow:3px 3px 3px rgba(0,0,0,.1) inset;
+	border:1px solid #464646;
+	float:left;
+	height:115px;
+	overflow:auto;
+	resize:none;
+}*/
+#contactf .btns {
+	padding:15px 0 0 0;
+	text-align:center;
+	overflow:hidden;
+
+    
+}
+	#contactf .btns a {
+		margin:0 0 0 35px;
+	}
+
