@@ -18,7 +18,6 @@ namespace SisCine
         {
             con = new SqlConnection(ConfigurationManager.ConnectionStrings["SisCine.Properties.Settings.conexion"].ConnectionString);
 
-
             if (Request.Params["men"] != null)
             {
                 string men = Request.Params["men"];

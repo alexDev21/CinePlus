@@ -2,12 +2,12 @@
 <%--<%@ MasterType virtualpath="~/Principal.Master" %>--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="bienvenido" runat="server" Visible="False">
-    <form runat="server">
+<asp:Content ID="Content4" ContentPlaceHolderID="bienvenido" runat="server" Visible="False"> <%--ESTE PLACEHOLDER DEBERIA SER BORRADO DE TDOS LADOS SU CONTENIDO SE USARA DIRECTAMENTE EN LA PAG MAESTRA--%>
+<%--    <form runat="server">
         <asp:Button ID="btnHistorial" runat="server" Text="Mi historial" Visible="False" BackColor="#115FEE" BorderStyle="Groove" Font-Bold="True" Font-Names="Segoe UI Semibold" ForeColor="White" OnClick="btnHistorial_Click"/>
         <asp:Label ID="lblBienvenido" class="bienvenidolbl" runat="server" Font-Bold="True" Font-Names="Arial Black" Font-Size="X-Large" ForeColor="White"></asp:Label>
         <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" Visible="False" BackColor="#115FEE" BorderStyle="Groove" Font-Bold="True" Font-Names="Segoe UI Semibold" ForeColor="White" OnClick="btnCerrarSesion_Click" />
-    </form>
+    </form>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Slider" runat="server">
     
@@ -39,8 +39,6 @@
                                     <img src="images/slide-4.jpg" alt="">
                                 </a>
                             </div>
-
-
                         </div>
                     </div>
 
@@ -111,7 +109,6 @@
 
 
 
-
                                         <!--INICIO PUBLICIDAD-->
 
                                     </div>
@@ -137,8 +134,6 @@
                             </div>
 
 
-
-
                             <div class="grid_5 suffix_1 omega">
                                 <article class="indent-bot-1">
                                     <h2 class="heading-1">Bienvenido!</h2>
@@ -156,9 +151,6 @@
                                   
                                 </article>
 
-
-
-
                                 <!--PARTE DERECHA -->
                                 <article>
                                     <h2>NUESTROS lOCALES:</h2>
@@ -175,11 +167,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type='text/javascript'></script>
 
 		<script type="text/javascript">//<![CDATA[
 		    $(function () {

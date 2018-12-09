@@ -57,9 +57,7 @@ namespace SisCine
 
         protected void btnComp1_Click(object sender, EventArgs e)
         {
-          
-
-
+         
             if (txtCantNi == null)
             {
                 txtCantNi.Text = "0";
@@ -79,8 +77,6 @@ namespace SisCine
             SqlParameter p4 = new SqlParameter("funcion", txtFuncion.Text);
             SqlParameter p5 = new SqlParameter("cant_tick_niños", Convert.ToInt32(txtCantNi.Text));
             SqlParameter p6 = new SqlParameter("cant_tick_adultos", Convert.ToInt32(txtCantAd.Text));
-
-            
 
             SqlParameter p7 = new SqlParameter("total", 1);
             SqlParameter p8 = new SqlParameter("iduser", Session["cod_tar"].ToString());
@@ -104,6 +100,7 @@ namespace SisCine
 
         }
 
+        /*
         protected void Button2_Click(object sender, EventArgs e)
         {
             if (txtCantNi2 == null)
@@ -147,6 +144,7 @@ namespace SisCine
             con.Close();
             lblMensaje.Text = "COMPRA REALIZADA CON EXITO";
         }
+
 
         protected void Button3_Click(object sender, EventArgs e)
         {
@@ -279,11 +277,7 @@ namespace SisCine
             con.Close();
             lblMensaje.Text = "COMPRA REALIZADA CON EXITO";
         }
+*/
 
-        //protected void btnCerrarSesion_Click(object sender, EventArgs e)
-        //{
-        //    Session.Remove("user");
-        //    Response.Redirect("Default.aspx");
-        //}
     }
 }

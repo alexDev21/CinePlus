@@ -56,7 +56,7 @@
             </center>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SisCine.Properties.Settings.conexion %>" SelectCommand="SP_historial" SelectCommandType="StoredProcedure">
             <SelectParameters>
-                <asp:SessionParameter DefaultValue="cp0001" Name="user" SessionField="cod_tar" Type="String" />
+                <asp:SessionParameter DefaultValue="" Name="user" SessionField="cod_tar" Type="String" />
             </SelectParameters>
         </asp:SqlDataSource>
     </form>

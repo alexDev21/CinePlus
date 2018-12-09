@@ -57,11 +57,11 @@
 #contactf .btns {
 	padding:15px 0 0 0;
 	text-align:center;
-	overflow:hidden;
-
+	/*overflow:hidden;*/
+    
     
 }
 	#contactf .btns a {
-		margin:0 0 0 35px;
+
 	}
 

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace SisCine
@@ -11,6 +13,7 @@ namespace SisCine
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+       
             //try
             //{
             //    if (Session["user"] != null)
@@ -42,9 +45,5 @@ namespace SisCine
             //}
         }
 
-        protected void btnCerrarSesion_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

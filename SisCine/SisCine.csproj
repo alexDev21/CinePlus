@@ -126,6 +126,28 @@
     <Content Include="images\dulces\dulceria-2.png" />
     <Content Include="images\dulces\palomitas.jpg" />
     <Content Include="images\dulces\palomitas.png" />
+    <Content Include="images\favicon.jpg" />
+    <Content Include="js\jquery-popup-overlay-gh-pages\index.html" />
+    <Content Include="js\jquery-popup-overlay-gh-pages\index.js" />
+    <Content Include="js\jquery-popup-overlay-gh-pages\jquery.popupoverlay.js" />
+    <Content Include="js\jquery-ui-1.12.1.custom\AUTHORS.txt" />
+    <Content Include="js\jquery-ui-1.12.1.custom\external\jquery\jquery.js" />
+    <Content Include="js\jquery-ui-1.12.1.custom\images\ui-icons_444444_256x240.png" />
+    <Content Include="js\jquery-ui-1.12.1.custom\images\ui-icons_555555_256x240.png" />
+    <Content Include="js\jquery-ui-1.12.1.custom\images\ui-icons_777620_256x240.png" />
+    <Content Include="js\jquery-ui-1.12.1.custom\images\ui-icons_777777_256x240.png" />
+    <Content Include="js\jquery-ui-1.12.1.custom\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="js\jquery-ui-1.12.1.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="js\jquery-ui-1.12.1.custom\index.html" />
+    <Content Include="js\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <Content Include="js\jquery-ui-1.12.1.custom\jquery-ui.js" />
+    <Content Include="js\jquery-ui-1.12.1.custom\jquery-ui.min.css" />
+    <Content Include="js\jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <Content Include="js\jquery-ui-1.12.1.custom\jquery-ui.structure.css" />
+    <Content Include="js\jquery-ui-1.12.1.custom\jquery-ui.structure.min.css" />
+    <Content Include="js\jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
+    <Content Include="js\jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
+    <Content Include="js\jquery-ui-1.12.1.custom\LICENSE.txt" />
     <Content Include="js\jqvideobox.js" />
     <Content Include="js\jqvideobox.min.js" />
     <Content Include="js\swfobject.js" />
@@ -191,6 +213,11 @@
     <Content Include="tmpt\pricing.html" />
     <Content Include="Principal.Master" />
     <Content Include="js\PIE.php" />
+    <Content Include="js\jquery-popup-overlay-gh-pages\bower.json" />
+    <Content Include="js\jquery-popup-overlay-gh-pages\package.json" />
+    <Content Include="js\jquery-popup-overlay-gh-pages\README.md" />
+    <Content Include="js\jquery-ui-1.12.1.custom\package.json" />
+    <Content Include="WebForm1.aspx" />
     <None Include="Properties\PublishProfiles\PublishAlexST.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -286,6 +313,16 @@
     <Compile Include="VentaEntradas.aspx.designer.cs">
       <DependentUpon>VentaEntradas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

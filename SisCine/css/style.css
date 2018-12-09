@@ -77,7 +77,7 @@ html {
 .wrapper {
     overflow: hidden;
     position: relative;
-    height: 500p;
+    /*height: 400px;*/
 }
 
 .extra-wrap {

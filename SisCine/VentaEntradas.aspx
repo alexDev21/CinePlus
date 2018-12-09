@@ -23,6 +23,9 @@
                             <article class="grid_14 suffix_1 prefix_1 alpha" role="combobox">
                                 <h2>Selecciona tu pelicula:</h2>
                                 <center> <asp:Label ID="lblMensaje" runat="server" ForeColor="Red" Width="490px" Font-Size="Large"></asp:Label></center>
+                                
+                                
+                                
                                 <div class="wrapper p2 hr-border-1">
                                     <img src="images/Cartelera/peli1.PNG" alt="" class="img-indent">
                                     <dl class="extra-wrap def-list-1">
@@ -58,10 +61,12 @@
                                          CantTicket adultos:<asp:TextBox ID="txtCantAd" runat="server" MaxLength="2"></asp:TextBox>
 
                                     <asp:Button ID="btnComp1" runat="server" Text="Comprar" OnClick="btnComp1_Click" />
-
-
-
+                                
                                 </div>
+
+
+
+                                <%-- 
                                 <div class="wrapper p2 hr-border-1">
                                     <img src="images/Cartelera/peli2.PNG" alt="" class="img-indent">
                                     <dl class="extra-wrap def-list-1">
@@ -204,7 +209,8 @@
 
                                     <asp:Button ID="Button5" runat="server" Text="Comprar" OnClick="Button5_Click" />
                                 </div>
-
+                                --%>           
+                            
                             </article>
                             <article class="grid_7 suffix_1 omega">
                                 <h2>Pasos a realizar:</h2>
@@ -247,7 +253,7 @@
                                         </p>
                                     </div>
                                 </div>
-
+                        
                                      <div class="wrapper hr-border-1">
                                     <span class="dropcap">04.
                                     </span>
