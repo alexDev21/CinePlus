@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="SisCine.Login1" %>
+﻿<%@ Page Title="Ingreso" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="SisCine.Login1" %>
 <%@ MasterType VirtualPath="~/Principal.Master" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -48,7 +48,7 @@
                                         <ContentTemplate>
                                             <label class="name">
                                                 <span>Código Tarjeta :</span>
-                                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="TextBox1" runat="server" Text="cp0001"></asp:TextBox>
                                             </label>
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
                                                 ErrorMessage="El campo es requerido"
@@ -58,7 +58,7 @@
                                             <br />
                                             <label class="email">
                                                 <span>Contraseña:</span>
-                                                <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+                                                <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Text="admin">admin</asp:TextBox>
                                             </label>
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
                                                 ErrorMessage="El campo es requerido"
@@ -118,6 +118,10 @@
         btnLimpiar.disabled = true;
 
         $(document).ready(function () {
+
+
+            //TODO BORRAR 
+
 
             //ESTO TMPOCO FUNCIONA COMO SE ESPERABA PARECE Q EL POSTBACK ASINCRONO CANCELA EL EVENTO JS EN EL CLIETNE
             // var btnLimpiar = document.getElementById('<%=btnLimp.ClientID %>');//.addEventListener('click',

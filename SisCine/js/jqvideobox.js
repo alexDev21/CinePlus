@@ -85,12 +85,18 @@ jQuery(function($) {
         nextlink = $('#lbNextLink');
         icon = $('#lbIcon');
         
-        center.live('click', function() {
-          icon.hide();
+        //center.live('click', function() {
+        //  icon.hide();
+        //});
+        $('body').on('click', '#lbCenter', function () {
+            icon.hide();
         });
         
-        $('#lbCenter iframe').live('click', function() {
-          icon.hide();
+        //$('#lbCenter iframe').live('click', function() {
+        //  icon.hide();
+          //});
+        $('#lbCenter').on('click', 'iframe', function () {
+            icon.hide();
         });
         
         element.click(activate);

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="VentaEntradas.aspx.cs" Inherits="SisCine.VentaEntradas" %>
+﻿<%@ Page Title="!! Compra tus Entradas" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="VentaEntradas.aspx.cs" Inherits="SisCine.VentaEntradas" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -23,16 +23,24 @@
                             <article class="grid_14 suffix_1 prefix_1 alpha" role="combobox">
                                 <h2>Selecciona tu pelicula:</h2>
                                 <center> <asp:Label ID="lblMensaje" runat="server" ForeColor="Red" Width="490px" Font-Size="Large"></asp:Label></center>
-                                
-                                
-                                
+
+                                <%-- foreach (var item in miLista)
+                                    {
+                                %>
+                                <ul>
+                                    <li><%=item.edad%>   <%=item.nombre%>   </li>
+                                </ul>  
+                                <%     }   
+                                --%>
+
                                 <div class="wrapper p2 hr-border-1">
-                                    <img src="images/Cartelera/peli1.PNG" alt="" class="img-indent">
+                                    <%--<img id="imgPortada" runat="server" src ="images/Cartelera/peli1.PNG" alt="" class="img-indent" />--%>
+                                    <img id="imgPortada" src="images/Cartelera/<%= model.imgFileName %>" alt="<%= model.imgFileName %>" class="img-indent" /><%--FUNCIONA SIN RUNAT = SERVER--%>
                                     <dl class="extra-wrap def-list-1">
                                         <dt>
-                                            <a href="#">APLICACION DIABOLICA.</a>
+                                            <a href="#"><%= model.nombre %></a>
                                         </dt>
-                                        <dd class="pad-left">Cinco adolescentes reciben una invitación para descargar una nueva aplicación tipo SIRI. Una vez descargada, esta penetra en sus miedos más profundos y comienza a atormentarlos hasta llevarlos a la muerte..
+                                        <%--<dd class="pad-left">Cinco adolescentes reciben una invitación para descargar una nueva aplicación tipo SIRI. Una vez descargada, esta penetra en sus miedos más profundos y comienza a atormentarlos hasta llevarlos a la muerte..
                                         </dd>
                                         <dd class="pad-left">Título Original: Bedeviled
                                         </dd>
@@ -42,26 +50,41 @@
                                         </dd>
                                         <dd class="pad-left">Director: Abel and Burlee Vang
                                         </dd>
+                                        --%>
+
+                                        <dd class="pad-left">
+                                            <%= model.descripcion %>
+                                            <br />
+                                            Título Original: <%= model.nombre %>
+                                            <br />
+
+                                            Duración:    <%= model.duracion %>
+                                            <br />
+                                            País: EE.UU
+                                            <br />
+                                            Director: Abel and Burlee Vang
+                                        </dd>
                                     </dl>
-                                    
+
                                     Seleccione Sede:<asp:DropDownList ID="txtCine" runat="server">
                                         <asp:ListItem Selected="True" Value="1"> Norte </asp:ListItem>
                                         <asp:ListItem Value="2"> Este </asp:ListItem>
                                         <asp:ListItem Value="4"> Sur </asp:ListItem>
                                     </asp:DropDownList>
 
-                                         Seleccione funcion:<asp:DropDownList ID="txtFuncion" runat="server">
+                                    Seleccione funcion:<asp:DropDownList ID="txtFuncion" runat="server">
                                         <asp:ListItem Selected="true" Value="8:00 pm"> 8:00 pm </asp:ListItem>
                                         <asp:ListItem Value="9:00 pm"> 9:00 pm </asp:ListItem>
                                         <asp:ListItem Value="10:00 pm"> 10:00 pm </asp:ListItem>
                                     </asp:DropDownList>
 
-                                         CantTicket niños:<asp:TextBox ID="txtCantNi" runat="server" MaxLength="2"></asp:TextBox>
+                                    CantTicket niños:<asp:TextBox ID="txtCantNi" runat="server" MaxLength="2"></asp:TextBox>
                                     <br />
-                                         CantTicket adultos:<asp:TextBox ID="txtCantAd" runat="server" MaxLength="2"></asp:TextBox>
-
+                                    CantTicket adultos:<asp:TextBox ID="txtCantAd" runat="server" MaxLength="2"></asp:TextBox>
+                                    <br />
                                     <asp:Button ID="btnComp1" runat="server" Text="Comprar" OnClick="btnComp1_Click" />
-                                
+                                    <asp:Button ID="Button1" runat="server" Text="Comprar" />
+
                                 </div>
 
 
@@ -209,9 +232,12 @@
 
                                     <asp:Button ID="Button5" runat="server" Text="Comprar" OnClick="Button5_Click" />
                                 </div>
-                                --%>           
-                            
+                                --%>
                             </article>
+
+
+
+
                             <article class="grid_7 suffix_1 omega">
                                 <h2>Pasos a realizar:</h2>
                                 <div class="wrapper hr-border-1">
@@ -223,7 +249,6 @@
                                             </strong>
                                         </p>
                                         <p class="p2">
-                                            
                                         </p>
                                     </div>
                                 </div>
@@ -236,7 +261,6 @@
                                             </strong>
                                         </p>
                                         <p class="p2">
-                                          
                                         </p>
                                     </div>
                                 </div>
@@ -253,8 +277,8 @@
                                         </p>
                                     </div>
                                 </div>
-                        
-                                     <div class="wrapper hr-border-1">
+
+                                <div class="wrapper hr-border-1">
                                     <span class="dropcap">04.
                                     </span>
                                     <div class="extra-wrap pad-top">
@@ -263,7 +287,7 @@
                                             </strong>
                                         </p>
                                         <p class="p2">
-                                           Ya puedes revisar tu compra en tu historial
+                                            Ya puedes revisar tu compra en tu historial
                                         </p>
                                     </div>
                                 </div>
